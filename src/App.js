@@ -32,6 +32,14 @@ class Testing extends Component {
     this.name = "Case Van Arkel";
   }
 
+  componentDidMount() {
+    alert("Mounted!");
+  }
+
+  componentWillUnmount() {
+
+  }
+
   render() {
     return (
       <div className="Testing">My name is {this.name}.</div>
