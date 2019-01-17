@@ -20,30 +20,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Testing />
         <Button />
       </div>
-    );
-  }
-}
-
-class Testing extends Component {
-  constructor(props) {
-    super(props);
-    this.name = "Case Van Arkel";
-  }
-
-  componentDidMount() {
-    alert("Mounted!");
-  }
-
-  componentWillUnmount() {
-
-  }
-
-  render() {
-    return (
-      <div className="Testing">My name is {this.name}.</div>
     );
   }
 }
@@ -67,15 +45,14 @@ class Button extends Component {
     let button;
 
     if (isToggleOn) {
-      button = <button onClick={this.handleClick}>{isToggleOn ? 'Yippee' : 'Nay'}</button>
+      button = <button onClick={this.handleClick}>{isToggleOn ? 'Toggle off' : 'Toggle on'}</button>
     } else {
-      button = <button onClick={this.handleClick}>{isToggleOn ? 'Yippee' : 'Nay'}</button>
+      button = <button onClick={this.handleClick}>{isToggleOn ? 'Toggle off' : 'Toggle on'}</button>
     }
 
     return (
       <div>
         {button}
-        <div isTggleOn={isToggleOn}>Showing now.</div>
       </div>
     );
   }
