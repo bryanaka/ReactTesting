@@ -20,8 +20,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Testing />
       </div>
-      <Testing />
     );
   }
 }
