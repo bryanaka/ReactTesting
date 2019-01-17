@@ -53,9 +53,12 @@ class Button extends Component {
   constructor(props) {
     super(props);
 
-    this.alertTesting = function() {
-      alert("Clicked!");
-    }
+    this.alertTesting = this.alertTesting.bind(this);
+    
+  }
+
+  alertTesting() {
+    alert("Clicked!");
   }
 
   render() {
