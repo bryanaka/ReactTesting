@@ -59,14 +59,13 @@ class Button extends Component {
   }
 
   handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
+    this.setState(state => ({ isToggleOn: !state.isToggleOn }));
   }
 
   render() {
     return (
       <button onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
+      <div>Toggle state is currently set to {isLoggedIn ? 'on' : 'off'}</div>
     );
   }
 }
