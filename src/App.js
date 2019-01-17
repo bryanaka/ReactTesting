@@ -52,18 +52,21 @@ class Button extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {isToggleOn: true};
 
-    this.alertTesting = this.alertTesting.bind(this);
-    
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  alertTesting() {
-    alert("Clicked!");
+  handleClick() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
   }
 
   render() {
     return (
-      <button onClick={this.alertTesting}>Click me!</button>
+      <button onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
     );
   }
 }
