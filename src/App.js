@@ -49,14 +49,18 @@ class Testing extends Component {
 }
 
 class Button extends Component {
-  
-  alertTesting() {
-    alert("Clicked!");
+
+  constructor(props) {
+    super(props);
+
+    this.alertTesting = function() {
+      alert("Clicked!");
+    }
   }
 
   render() {
     return (
-      <button onClick={alertTesting}>Click me!</button>
+      <button onClick={this.alertTesting}>Click me!</button>
     );
   }
 }
