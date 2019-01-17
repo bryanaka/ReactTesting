@@ -63,8 +63,19 @@ class Button extends Component {
   }
 
   render() {
+    const isToggleOn = this.state.isToggleOn;
+    let button;
+
+    if (isToggleOn) {
+      <button onClick={this.handleClick}>ON</button>
+    } else {
+      <button onClick={this.handleClick}>OFF</button>
+    }
+
     return (
-      <button onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
+      <div>
+        {button}
+      </div>
     );
   }
 }
