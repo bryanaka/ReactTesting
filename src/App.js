@@ -67,9 +67,9 @@ class Button extends Component {
     let button;
 
     if (isToggleOn) {
-      button = <button onClick={this.handleClick}>ON</button>
+      button = <button onClick={this.handleClick}>{isToggleOn ? 'Yippee' : 'Nay'}</button>
     } else {
-      button = <button onClick={this.handleClick}>OFF</button>
+      button = <button onClick={this.handleClick}>{isToggleOn ? 'Yippee' : 'Nay'}</button>
     }
 
     return (
