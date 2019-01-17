@@ -65,7 +65,6 @@ class Button extends Component {
   render() {
     return (
       <button onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
-      <div>This works fine.</div>
     );
   }
 }
