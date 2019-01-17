@@ -21,6 +21,7 @@ class App extends Component {
           </a>
         </header>
         <Testing />
+        <Button />
       </div>
     );
   }
@@ -47,5 +48,16 @@ class Testing extends Component {
   }
 }
 
+class Button extends Component {
+  function alertTesting {
+    alert("Clicked!");
+  }
+
+  render() {
+    return (
+      <button onClick={alertTesting}>Click me!</button>
+    );
+  }
+}
 
 export default App;
