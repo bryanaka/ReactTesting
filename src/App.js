@@ -49,7 +49,8 @@ class Testing extends Component {
 }
 
 class Button extends Component {
-  function alertTesting {
+  
+  alertTesting() {
     alert("Clicked!");
   }
 
