@@ -29,7 +29,7 @@ class App extends Component {
 class Testing extends Component {
   render() {
     return (
-      <div>Testing this out.</div>
+      <div className="Testing">Testing this out.</div>
     );
   }
 }
