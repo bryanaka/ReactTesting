@@ -27,9 +27,13 @@ class App extends Component {
 }
 
 class Testing extends Component {
+  constructor(props) {
+    this.name = "Case Van Arkel";
+  }
+
   render() {
     return (
-      <div className="Testing">Testing this out.</div>
+      <div className="Testing">My name is {this.name}.</div>
     );
   }
 }
