@@ -28,6 +28,7 @@ class App extends Component {
 
 class Testing extends Component {
   constructor(props) {
+    super(props);
     this.name = "Case Van Arkel";
   }
 
