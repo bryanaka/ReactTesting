@@ -75,6 +75,7 @@ class Button extends Component {
     return (
       <div>
         {button}
+        <div isTggleOn={isToggleOn}>Showing now.</div>
       </div>
     );
   }
