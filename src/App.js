@@ -56,8 +56,8 @@ class Nav extends Component {
         <button className="Nav-button" onClick={this.handleClick('contact')}>
           Contact
         </button>
+        <div>{this.state.view}</div>
       </div>
-      <div>{this.state.view}</div>
     );
   }
 }
