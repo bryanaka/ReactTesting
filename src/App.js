@@ -30,13 +30,7 @@ class Nav extends Component {
   }
 
   handleClick(view) {
-    if (view == 'home') {
-      this.setState(state => ({ view: 'home' }));
-    }
-    else if (view == 'work') {
-      this.setState(state => ({ view: 'work' }));
-    }
-    else if (view == 'about') {
+    if (view == 'about') {
       this.setState(state => ({ view: 'about' }));
     }
   } 
