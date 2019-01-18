@@ -30,7 +30,7 @@ class Nav extends Component {
   }
 
   handleClick() {
-    this.setState(state => ({ isToggleOn: 'about' }));
+    this.setState(state => ({ isToggleOn: !state.isToggleOn }));
   }
 
   render() {
