@@ -29,8 +29,8 @@ class Nav extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(view) {
-      this.setState(state => ({ viewName: view }));
+  handleClick() {
+      this.setState(state => ({ viewName: 'about' }));
   } 
 
   render() {
