@@ -23,16 +23,14 @@ class Body extends Component {
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = {view: 'home'};
+    this.state = {viewName: 'home'};
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(view) {
-    if (view == 'about') {
-      this.setState(state => ({ view: 'about' }));
-    }
+      this.setState(state => ({ viewName: view }));
   } 
 
   render() {
@@ -50,7 +48,7 @@ class Nav extends Component {
         <button className="Nav-button" onClick={this.handleClick('contact')}>
           Contact
         </button>
-        <div>{this.state.view}</div>
+        <div>{this.state.viewName}</div>
       </div>
     );
   }
