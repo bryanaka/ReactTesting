@@ -36,18 +36,6 @@ class Nav extends Component {
   render() {
     return (
       <div className="Nav-container">
-        <button className="Nav-button" onClick={this.handleClick()}>
-          Home
-        </button>
-        <button className="Nav-button" onClick={this.handleClick()}>
-          Work
-        </button>
-        <button className="Nav-button" onClick={this.handleClick()}>
-          About
-        </button>
-        <button className="Nav-button" onClick={this.handleClick()}>
-          Contact
-        </button>
         <div>{this.state.viewName}</div>
       </div>
     );
